@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard — Products</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header>
+    <nav class="navbar">
+      <div class="navbar__inner">
+        <a href="index.html" class="navbar__brand">
+          <i class="fa-solid fa-gauge-high"></i>
+          AdminPanel
+        </a>
+        <ul class="navbar__links">
+          <li>
+            <a href="index.html">
+              <i class="fa-solid fa-house"></i>
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./Images/WhatsApp Image 2026-06-23 at 2.30.27 PM.jpeg" alt="User" class="navbar__avatar" />
+              Shaher Moussa
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ===== PAGE WRAPPER ===== -->
+  <div class="page-wrapper">
+
+    <!-- ===== SIDEBAR ===== -->
+    <aside class="sidebar">
+      <div class="sidebar__avatar-wrap">
+        <img src="./Images/WhatsApp Image 2026-06-23 at 2.30.27 PM.jpeg" alt="Shaher Moussa" class="sidebar__avatar" />
+        <span class="sidebar__badge"></span>
+      </div>
+      <div class="sidebar__name">Shaher Moussa</div>
+      <span class="sidebar__role">Super Admin</span>
+      <div class="sidebar__divider"></div>
+      <div class="sidebar__info">
+        <div class="sidebar__info-item">
+          <i class="fa-solid fa-envelope"></i>
+          <div>
+            <div class="sidebar__info-label">Email</div>
+            <div class="sidebar__info-value">shaher@domain.com</div>
+          </div>
+        </div>
+        <div class="sidebar__info-item">
+          <i class="fa-solid fa-venus-mars"></i>
+          <div>
+            <div class="sidebar__info-label">Gender</div>
+            <div class="sidebar__info-value">Male</div>
+          </div>
+        </div>
+        <div class="sidebar__info-item">
+          <i class="fa-solid fa-lock"></i>
+          <div>
+            <div class="sidebar__info-label">Password</div>
+            <div class="sidebar__info-value">••••••••••</div>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <main class="content">
+
+      <!-- Tabs -->
+      <nav class="tabs">
+        <a href="index.html">
+          <i class="fa-solid fa-user-shield"></i>
+          Admins
+        </a>
+        <a href="clients.html">
+          <i class="fa-solid fa-users"></i>
+          Clients
+        </a>
+        <a href="products.html" class="active">
+          <i class="fa-solid fa-box"></i>
+          Products
+        </a>
+      </nav>
+
+      <!-- Stats -->
+      <div class="stats-strip">
+        <div class="stat-card">
+          <div class="stat-card__icon stat-card__icon--blue">
+            <i class="fa-solid fa-box-open"></i>
+          </div>
+          <div>
+            <div class="stat-card__label">Total Products</div>
+            <div class="stat-card__value">84</div>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-card__icon stat-card__icon--green">
+            <i class="fa-solid fa-circle-check"></i>
+          </div>
+          <div>
+            <div class="stat-card__label">Available</div>
+            <div class="stat-card__value">61</div>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-card__icon stat-card__icon--orange">
+            <i class="fa-solid fa-triangle-exclamation"></i>
+          </div>
+          <div>
+            <div class="stat-card__label">Out of Stock</div>
+            <div class="stat-card__value">23</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section Header -->
+      <div class="section-header">
+        <div>
+          <div class="section-title">Product Inventory</div>
+          <div class="section-subtitle">Track and manage all your products</div>
+        </div>
+        <a href="#" class="btn-add">
+          <i class="fa-solid fa-plus"></i>
+          Add Product
+        </a>
+      </div>
+
+      <!-- Table -->
+      <div class="table-wrapper">
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>#ID</th>
+                <th>Product</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Status</th>
+                <th>Date Added</th>
+                <th>Options</th>
+              </tr>
+            </thead>
+            <tbody>
+
+              <tr>
+                <td><span style="color:var(--text-light);font-size:.78rem;">PRD-001</span></td>
+                <td>
+                  <div class="product-cell">
+                    <div class="product-icon">💻</div>
+                    <div>
+                      <div class="product-name">MacBook Pro 14"</div>
+                      <div class="product-sku">SKU: APL-MBP14</div>
+                    </div>
+                  </div>
+                </td>
+                <td><span class="price">$1,999.00</span></td>
+                <td>42</td>
+                <td><span class="badge badge--green"><i class="fa-solid fa-circle"></i> Available</span></td>
+                <td>Jun 01, 2026</td>
+                <td>
+                  <div class="btn-actions">
+                    <button class="btn-icon btn-edit"><i class="fa-solid fa-pen"></i> Edit</button>
+                    <button class="btn-icon btn-delete"><i class="fa-solid fa-trash"></i> Delete</button>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td><span style="color:var(--text-light);font-size:.78rem;">PRD-002</span></td>
+                <td>
+                  <div class="product-cell">
+                    <div class="product-icon">📱</div>
+                    <div>
+                      <div class="product-name">iPhone 16 Pro</div>
+                      <div class="product-sku">SKU: APL-IP16P</div>
+                    </div>
+                  </div>
+                </td>
+                <td><span class="price">$1,199.00</span></td>
+                <td class="qty-low">3</td>
+                <td><span class="badge badge--yellow"><i class="fa-solid fa-circle"></i> Low Stock</span></td>
+                <td>May 28, 2026</td>
+                <td>
+                  <div class="btn-actions">
+                    <button class="btn-icon btn-edit"><i class="fa-solid fa-pen"></i> Edit</button>
+                    <button class="btn-icon btn-delete"><i class="fa-solid fa-trash"></i> Delete</button>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td><span style="color:var(--text-light);font-size:.78rem;">PRD-003</span></td>
+                <td>
+                  <div class="product-cell">
+                    <div class="product-icon">🎧</div>
+                    <div>
+                      <div class="product-name">Sony WH-1000XM6</div>
+                      <div class="product-sku">SKU: SNY-WH6</div>
+                    </div>
+                  </div>
+                </td>
+                <td><span class="price">$349.00</span></td>
+                <td>0</td>
+                <td><span class="badge badge--red"><i class="fa-solid fa-circle"></i> Out of Stock</span></td>
+                <td>May 14, 2026</td>
+                <td>
+                  <div class="btn-actions">
+                    <button class="btn-icon btn-edit"><i class="fa-solid fa-pen"></i> Edit</button>
+                    <button class="btn-icon btn-delete"><i class="fa-solid fa-trash"></i> Delete</button>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td><span style="color:var(--text-light);font-size:.78rem;">PRD-004</span></td>
+                <td>
+                  <div class="product-cell">
+                    <div class="product-icon">🖥️</div>
+                    <div>
+                      <div class="product-name">Dell UltraSharp 27"</div>
+                      <div class="product-sku">SKU: DLL-U27</div>
+                    </div>
+                  </div>
+                </td>
+                <td><span class="price">$599.00</span></td>
+                <td>18</td>
+                <td><span class="badge badge--green"><i class="fa-solid fa-circle"></i> Available</span></td>
+                <td>Jun 10, 2026</td>
+                <td>
+                  <div class="btn-actions">
+                    <button class="btn-icon btn-edit"><i class="fa-solid fa-pen"></i> Edit</button>
+                    <button class="btn-icon btn-delete"><i class="fa-solid fa-trash"></i> Delete</button>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td><span style="color:var(--text-light);font-size:.78rem;">PRD-005</span></td>
+                <td>
+                  <div class="product-cell">
+                    <div class="product-icon">⌨️</div>
+                    <div>
+                      <div class="product-name">Keychron Q3 Max</div>
+                      <div class="product-sku">SKU: KCN-Q3M</div>
+                    </div>
+                  </div>
+                </td>
+                <td><span class="price">$189.00</span></td>
+                <td>67</td>
+                <td><span class="badge badge--green"><i class="fa-solid fa-circle"></i> Available</span></td>
+                <td>Jun 17, 2026</td>
+                <td>
+                  <div class="btn-actions">
+                    <button class="btn-icon btn-edit"><i class="fa-solid fa-pen"></i> Edit</button>
+                    <button class="btn-icon btn-delete"><i class="fa-solid fa-trash"></i> Delete</button>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td><span style="color:var(--text-light);font-size:.78rem;">PRD-006</span></td>
+                <td>
+                  <div class="product-cell">
+                    <div class="product-icon">🖱️</div>
+                    <div>
+                      <div class="product-name">Logitech MX Master 4</div>
+                      <div class="product-sku">SKU: LGT-MX4</div>
+                    </div>
+                  </div>
+                </td>
+                <td><span class="price">$109.00</span></td>
+                <td>0</td>
+                <td><span class="badge badge--red"><i class="fa-solid fa-circle"></i> Out of Stock</span></td>
+                <td>Apr 30, 2026</td>
+                <td>
+                  <div class="btn-actions">
+                    <button class="btn-icon btn-edit"><i class="fa-solid fa-pen"></i> Edit</button>
+                    <button class="btn-icon btn-delete"><i class="fa-solid fa-trash"></i> Delete</button>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td><span style="color:var(--text-light);font-size:.78rem;">PRD-007</span></td>
+                <td>
+                  <div class="product-cell">
+                    <div class="product-icon">📷</div>
+                    <div>
+                      <div class="product-name">Sony A7C II</div>
+                      <div class="product-sku">SKU: SNY-A7C2</div>
+                    </div>
+                  </div>
+                </td>
+                <td><span class="price">$2,499.00</span></td>
+                <td>9</td>
+                <td><span class="badge badge--green"><i class="fa-solid fa-circle"></i> Available</span></td>
+                <td>Jun 20, 2026</td>
+                <td>
+                  <div class="btn-actions">
+                    <button class="btn-icon btn-edit"><i class="fa-solid fa-pen"></i> Edit</button>
+                    <button class="btn-icon btn-delete"><i class="fa-solid fa-trash"></i> Delete</button>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td><span style="color:var(--text-light);font-size:.78rem;">PRD-008</span></td>
+                <td>
+                  <div class="product-cell">
+                    <div class="product-icon">🔋</div>
+                    <div>
+                      <div class="product-name">Anker 737 Power Bank</div>
+                      <div class="product-sku">SKU: ANK-737</div>
+                    </div>
+                  </div>
+                </td>
+                <td><span class="price">$149.00</span></td>
+                <td class="qty-low">5</td>
+                <td><span class="badge badge--yellow"><i class="fa-solid fa-circle"></i> Low Stock</span></td>
+                <td>Jun 05, 2026</td>
+                <td>
+                  <div class="btn-actions">
+                    <button class="btn-icon btn-edit"><i class="fa-solid fa-pen"></i> Edit</button>
+                    <button class="btn-icon btn-delete"><i class="fa-solid fa-trash"></i> Delete</button>
+                  </div>
+                </td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+        <!-- /table-container -->
+      </div>
+      <!-- /table-wrapper -->
+
+    </main>
+    <!-- /content -->
+
+  </div>
+  <!-- /page-wrapper -->
+
+  <footer class="site-footer">
+    &copy; 2026 Dashboard &nbsp;|&nbsp; Developed by <a href="#">Shaher Moussa</a>
+  </footer>
+
+</body>
+</html>

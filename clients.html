@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard — Clients</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    /* Clients-page specific extras */
+    .clients-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 16px;
+    }
+
+    .client-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 0.7rem;
+      font-weight: 600;
+      padding: 3px 10px;
+      border-radius: 20px;
+      background: #f1f5f9;
+      color: var(--text-muted);
+    }
+
+    .client-tag--vip {
+      background: #fff4f0;
+      color: var(--accent);
+    }
+
+    .client-tag--new {
+      background: #f0fdf4;
+      color: #15803d;
+    }
+
+    @media (max-width: 768px) {
+      .clients-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header>
+    <nav class="navbar">
+      <div class="navbar__inner">
+        <a href="index.html" class="navbar__brand">
+          <i class="fa-solid fa-gauge-high"></i>
+          AdminPanel
+        </a>
+        <ul class="navbar__links">
+          <li>
+            <a href="index.html">
+              <i class="fa-solid fa-house"></i>
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./Images/WhatsApp Image 2026-06-23 at 2.30.27 PM.jpeg" alt="User" class="navbar__avatar" />
+              Shaher Moussa
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ===== PAGE WRAPPER ===== -->
+  <div class="page-wrapper">
+
+    <!-- ===== SIDEBAR ===== -->
+    <aside class="sidebar">
+      <div class="sidebar__avatar-wrap">
+        <img src="./Images/WhatsApp Image 2026-06-23 at 2.30.27 PM.jpeg" alt="Shaher Moussa" class="sidebar__avatar" />
+        <span class="sidebar__badge"></span>
+      </div>
+      <div class="sidebar__name">Shaher Moussa</div>
+      <span class="sidebar__role">Super Admin</span>
+      <div class="sidebar__divider"></div>
+      <div class="sidebar__info">
+        <div class="sidebar__info-item">
+          <i class="fa-solid fa-envelope"></i>
+          <div>
+            <div class="sidebar__info-label">Email</div>
+            <div class="sidebar__info-value">shaher@domain.com</div>
+          </div>
+        </div>
+        <div class="sidebar__info-item">
+          <i class="fa-solid fa-venus-mars"></i>
+          <div>
+            <div class="sidebar__info-label">Gender</div>
+            <div class="sidebar__info-value">Male</div>
+          </div>
+        </div>
+        <div class="sidebar__info-item">
+          <i class="fa-solid fa-lock"></i>
+          <div>
+            <div class="sidebar__info-label">Password</div>
+            <div class="sidebar__info-value">••••••••••</div>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <main class="content">
+
+      <!-- Tabs -->
+      <nav class="tabs">
+        <a href="index.html">
+          <i class="fa-solid fa-user-shield"></i>
+          Admins
+        </a>
+        <a href="clients.html" class="active">
+          <i class="fa-solid fa-users"></i>
+          Clients
+        </a>
+        <a href="products.html">
+          <i class="fa-solid fa-box"></i>
+          Products
+        </a>
+      </nav>
+
+      <!-- Stats -->
+      <div class="stats-strip">
+        <div class="stat-card">
+          <div class="stat-card__icon stat-card__icon--blue">
+            <i class="fa-solid fa-users"></i>
+          </div>
+          <div>
+            <div class="stat-card__label">Total Clients</div>
+            <div class="stat-card__value">248</div>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-card__icon stat-card__icon--orange">
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <div>
+            <div class="stat-card__label">VIP Clients</div>
+            <div class="stat-card__value">34</div>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-card__icon stat-card__icon--green">
+            <i class="fa-solid fa-user-plus"></i>
+          </div>
+          <div>
+            <div class="stat-card__label">New This Month</div>
+            <div class="stat-card__value">19</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section Header -->
+      <div class="section-header">
+        <div>
+          <div class="section-title">All Clients</div>
+          <div class="section-subtitle">Browse and manage registered client accounts</div>
+        </div>
+        <a href="#" class="btn-add">
+          <i class="fa-solid fa-plus"></i>
+          Add Client
+        </a>
+      </div>
+
+      <!-- Client Cards -->
+      <div class="clients-grid">
+
+        <div class="client-card">
+          <img src="https://i.pravatar.cc/150?img=5" alt="Lena Cooper" class="client-card__avatar" />
+          <div class="client-card__body">
+            <div class="client-card__name">Lena Cooper <span class="client-tag client-tag--vip">⭐ VIP</span></div>
+            <div class="client-card__info">
+              <span><i class="fa-solid fa-envelope"></i> lena@mail.com</span>
+              <span><i class="fa-solid fa-venus"></i> Female</span>
+              <span><i class="fa-solid fa-map-pin"></i> New York</span>
+            </div>
+          </div>
+          <div class="client-card__actions">
+            <button class="btn-icon btn-edit"><i class="fa-solid fa-pen"></i></button>
+            <button class="btn-icon btn-delete"><i class="fa-solid fa-trash"></i></button>
+          </div>
+        </div>
+
+        <div class="client-card">
+          <img src="https://i.pravatar.cc/150?img=15" alt="James Roe" class="client-card__avatar" />
+          <div class="client-card__body">
+            <div class="client-card__name">James Roe <span class="client-tag client-tag--new">New</span></div>
+            <div class="client-card__info">
+              <span><i class="fa-solid fa-envelope"></i> james@mail.com</span>
+              <span><i class="fa-solid fa-mars"></i> Male</span>
+              <span><i class="fa-solid fa-map-pin"></i> London</span>
+            </div>
+          </div>
+          <div class="client-card__actions">
+            <button class="btn-icon btn-edit"><i class="fa-solid fa-pen"></i></button>
+            <button class="btn-icon btn-delete"><i class="fa-solid fa-trash"></i></button>
+          </div>
+        </div>
+
+        <div class="client-card">
+          <img src="https://i.pravatar.cc/150?img=21" alt="Nadia El-Amin" class="client-card__avatar" />
+          <div class="client-card__body">
+            <div class="client-card__name">Nadia El-Amin</div>
+            <div class="client-card__info">
+              <span><i class="fa-solid fa-envelope"></i> nadia@mail.com</span>
+              <span><i class="fa-solid fa-venus"></i> Female</span>
+              <span><i class="fa-solid fa-map-pin"></i> Cairo</span>
+            </div>
+          </div>
+          <div class="client-card__actions">
+            <button class="btn-icon btn-edit"><i class="fa-solid fa-pen"></i></button>
+            <button class="btn-icon btn-delete"><i class="fa-solid fa-trash"></i></button>
+          </div>
+        </div>
+
+        <div class="client-card">
+          <img src="https://i.pravatar.cc/150?img=68" alt="Carlos Reyes" class="client-card__avatar" />
+          <div class="client-card__body">
+            <div class="client-card__name">Carlos Reyes <span class="client-tag client-tag--vip">⭐ VIP</span></div>
+            <div class="client-card__info">
+              <span><i class="fa-solid fa-envelope"></i> carlos@mail.com</span>
+              <span><i class="fa-solid fa-mars"></i> Male</span>
+              <span><i class="fa-solid fa-map-pin"></i> Madrid</span>
+            </div>
+          </div>
+          <div class="client-card__actions">
+            <button class="btn-icon btn-edit"><i class="fa-solid fa-pen"></i></button>
+            <button class="btn-icon btn-delete"><i class="fa-solid fa-trash"></i></button>
+          </div>
+        </div>
+
+        <div class="client-card">
+          <img src="https://i.pravatar.cc/150?img=44" alt="Yuki Tanaka" class="client-card__avatar" />
+          <div class="client-card__body">
+            <div class="client-card__name">Yuki Tanaka <span class="client-tag client-tag--new">New</span></div>
+            <div class="client-card__info">
+              <span><i class="fa-solid fa-envelope"></i> yuki@mail.com</span>
+              <span><i class="fa-solid fa-venus"></i> Female</span>
+              <span><i class="fa-solid fa-map-pin"></i> Tokyo</span>
+            </div>
+          </div>
+          <div class="client-card__actions">
+            <button class="btn-icon btn-edit"><i class="fa-solid fa-pen"></i></button>
+            <button class="btn-icon btn-delete"><i class="fa-solid fa-trash"></i></button>
+          </div>
+        </div>
+
+        <div class="client-card">
+          <img src="https://i.pravatar.cc/150?img=56" alt="David Müller" class="client-card__avatar" />
+          <div class="client-card__body">
+            <div class="client-card__name">David Müller</div>
+            <div class="client-card__info">
+              <span><i class="fa-solid fa-envelope"></i> david@mail.com</span>
+              <span><i class="fa-solid fa-mars"></i> Male</span>
+              <span><i class="fa-solid fa-map-pin"></i> Berlin</span>
+            </div>
+          </div>
+          <div class="client-card__actions">
+            <button class="btn-icon btn-edit"><i class="fa-solid fa-pen"></i></button>
+            <button class="btn-icon btn-delete"><i class="fa-solid fa-trash"></i></button>
+          </div>
+        </div>
+
+      </div>
+      <!-- /clients-grid -->
+
+    </main>
+    <!-- /content -->
+
+  </div>
+  <!-- /page-wrapper -->
+
+  <footer class="site-footer">
+    &copy; 2026 Dashboard &nbsp;|&nbsp; Developed by <a href="#">Shaher Moussa</a>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard — Admins</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header>
+    <nav class="navbar">
+      <div class="navbar__inner">
+
+        <a href="index.html" class="navbar__brand">
+          <i class="fa-solid fa-gauge-high"></i>
+          AdminPanel
+        </a>
+
+        <ul class="navbar__links">
+          <li>
+            <a href="index.html" class="active">
+              <i class="fa-solid fa-house"></i>
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./Images/WhatsApp Image 2026-06-23 at 2.30.27 PM.jpeg" alt="User" class="navbar__avatar" />
+              Shaher Moussa
+            </a>
+          </li>
+        </ul>
+
+      </div>
+    </nav>
+  </header>
+
+  <!-- ===== PAGE WRAPPER ===== -->
+  <div class="page-wrapper">
+
+    <!-- ===== SIDEBAR ===== -->
+    <aside class="sidebar">
+      <div class="sidebar__avatar-wrap">
+        <img src="./Images/WhatsApp Image 2026-06-23 at 2.30.27 PM.jpeg" alt="Shaher Moussa" class="sidebar__avatar" />
+        <span class="sidebar__badge"></span>
+      </div>
+      <div class="sidebar__name">Shaher Moussa</div>
+      <span class="sidebar__role">Super Admin</span>
+      <div class="sidebar__divider"></div>
+      <div class="sidebar__info">
+        <div class="sidebar__info-item">
+          <i class="fa-solid fa-envelope"></i>
+          <div>
+            <div class="sidebar__info-label">Email</div>
+            <div class="sidebar__info-value">shaher@domain.com</div>
+          </div>
+        </div>
+        <div class="sidebar__info-item">
+          <i class="fa-solid fa-venus-mars"></i>
+          <div>
+            <div class="sidebar__info-label">Gender</div>
+            <div class="sidebar__info-value">Male</div>
+          </div>
+        </div>
+        <div class="sidebar__info-item">
+          <i class="fa-solid fa-lock"></i>
+          <div>
+            <div class="sidebar__info-label">Password</div>
+            <div class="sidebar__info-value">••••••••••</div>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <main class="content">
+
+      <!-- Tabs -->
+      <nav class="tabs">
+        <a href="index.html" class="active">
+          <i class="fa-solid fa-user-shield"></i>
+          Admins
+        </a>
+        <a href="clients.html">
+          <i class="fa-solid fa-users"></i>
+          Clients
+        </a>
+        <a href="products.html">
+          <i class="fa-solid fa-box"></i>
+          Products
+        </a>
+      </nav>
+
+      <!-- Stats -->
+      <div class="stats-strip">
+        <div class="stat-card">
+          <div class="stat-card__icon stat-card__icon--orange">
+            <i class="fa-solid fa-user-shield"></i>
+          </div>
+          <div>
+            <div class="stat-card__label">Total Admins</div>
+            <div class="stat-card__value">3</div>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-card__icon stat-card__icon--blue">
+            <i class="fa-solid fa-users"></i>
+          </div>
+          <div>
+            <div class="stat-card__label">Active Users</div>
+            <div class="stat-card__value">148</div>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-card__icon stat-card__icon--green">
+            <i class="fa-solid fa-circle-check"></i>
+          </div>
+          <div>
+            <div class="stat-card__label">Online Now</div>
+            <div class="stat-card__value">12</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section Header -->
+      <div class="section-header">
+        <div>
+          <div class="section-title">All Administrators</div>
+          <div class="section-subtitle">Manage and oversee your admin accounts</div>
+        </div>
+        <a href="#" class="btn-add">
+          <i class="fa-solid fa-plus"></i>
+          Add Admin
+        </a>
+      </div>
+
+      <!-- Admin Cards -->
+      <div class="cards-grid">
+
+        <!-- Card 1 -->
+        <div class="admin-card">
+          <img src="https://i.pravatar.cc/150?img=33" alt="Omar Hassan" class="admin-card__avatar" />
+          <div class="admin-card__name">Omar Hassan</div>
+          <div class="admin-card__meta">
+            <div class="admin-card__row">
+              <i class="fa-solid fa-envelope"></i>
+              omar@domain.com
+            </div>
+            <div class="admin-card__row">
+              <i class="fa-solid fa-mars"></i>
+              Male
+            </div>
+          </div>
+          <button class="btn-ban">
+            <i class="fa-solid fa-ban"></i>
+            Ban Admin
+          </button>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="admin-card">
+          <img src="https://i.pravatar.cc/150?img=47" alt="Sara Khalil" class="admin-card__avatar" />
+          <div class="admin-card__name">Sara Khalil</div>
+          <div class="admin-card__meta">
+            <div class="admin-card__row">
+              <i class="fa-solid fa-envelope"></i>
+              sara@domain.com
+            </div>
+            <div class="admin-card__row">
+              <i class="fa-solid fa-venus"></i>
+              Female
+            </div>
+          </div>
+          <button class="btn-ban">
+            <i class="fa-solid fa-ban"></i>
+            Ban Admin
+          </button>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="admin-card">
+          <img src="https://i.pravatar.cc/150?img=59" alt="Karim Nader" class="admin-card__avatar" />
+          <div class="admin-card__name">Karim Nader</div>
+          <div class="admin-card__meta">
+            <div class="admin-card__row">
+              <i class="fa-solid fa-envelope"></i>
+              karim@domain.com
+            </div>
+            <div class="admin-card__row">
+              <i class="fa-solid fa-mars"></i>
+              Male
+            </div>
+          </div>
+          <button class="btn-ban">
+            <i class="fa-solid fa-ban"></i>
+            Ban Admin
+          </button>
+        </div>
+
+      </div>
+      <!-- /cards-grid -->
+
+    </main>
+    <!-- /content -->
+
+  </div>
+  <!-- /page-wrapper -->
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    &copy; 2026 Dashboard &nbsp;|&nbsp; Developed by <a href="#">Shaher Moussa</a>
+  </footer>
+
+</body>
+</html>
